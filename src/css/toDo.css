@@ -1,0 +1,44 @@
+body {
+    /*background-color: #F5F5F5;*/
+    background-image: radial-gradient(circle at 85% 1%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 96%,transparent 96%, transparent 100%),radial-gradient(circle at 14% 15%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 1%,transparent 1%, transparent 100%),radial-gradient(circle at 60% 90%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 20%,transparent 20%, transparent 100%),radial-gradient(circle at 79% 7%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 78%,transparent 78%, transparent 100%),radial-gradient(circle at 55% 65%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 52%,transparent 52%, transparent 100%),linear-gradient(321deg, rgb(37, 56, 222),rgb(96, 189, 244));
+}
+#toDo{
+    overflow-y: auto;
+    position: relative;
+    padding-bottom: 70px;
+}
+.dot{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+#mainFooter{
+    bottom: 0;
+    position: fixed;
+    width: 100%
+}
+.fetching{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    display: flex;
+    color: #FFF;
+    font-size: 5em;
+    justify-content: center;
+    align-items: center;
+}
+.copyright{
+    color: #FFFFFF;
+}
+.spinner{
+    animation: spinner 1.5s linear infinite;
+}
+
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+  }
